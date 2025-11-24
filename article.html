@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en">
-<head>
+<html class="light" lang="en"><head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
@@ -10,15 +8,13 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
     <title>Pizzeria district</title>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800&amp;display=swap"
-          rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <style type="text/tailwindcss">
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            font-size: 24px;
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+          font-size: 24px;
         }
     </style>
     <script id="tailwind-config">
@@ -42,11 +38,21 @@
               fontFamily: {
                 "display": ["Epilogue", "sans-serif"]
               },
-              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+              borderRadius: {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+              },
             },
           },
         }
     </script>
+    <style>
+        body {
+          min-height: 100dvh;
+        }
+    </style>
     <style>
         body {
           min-height: max(884px, 100dvh);
@@ -54,107 +60,63 @@
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
-<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-    <!-- TopAppBar -->
-    <header class="sticky top-0 z-10 flex items-center bg-surface-light dark:bg-surface-dark/80 backdrop-blur-sm p-4 pb-2 justify-between">
-        <button aria-label="Back"
-                class="flex size-10 shrink-0 items-center justify-center text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+    <header class="sticky top-0 z-10 flex items-center justify-between bg-surface-light/80 p-4 backdrop-blur-sm dark:bg-surface-dark/80">
+        <button aria-label="Back" class="flex size-10 shrink-0 items-center justify-center rounded-full text-text-light hover:bg-surface-subtle-light dark:text-text-dark dark:hover:bg-surface-subtle-dark">
             <span class="material-symbols-outlined">arrow_back</span>
         </button>
-        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">PizzaPalate</h2>
+        <h2 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark">Pizzeria district</h2>
         <div class="size-10 shrink-0"></div>
     </header>
     <main class="flex-grow">
-        <!-- Article Header -->
-        <div class="p-4 bg-surface-light dark:bg-surface-dark">
-            <!-- Chips/Category -->
-            <div class="flex gap-3 pb-3">
-                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 pl-4 pr-4">
-                    <p class="text-primary text-sm font-medium leading-normal">Deep Dive</p>
+        <div class="mx-auto max-w-4xl bg-surface-light dark:bg-surface-dark lg:mt-8 lg:rounded-xl lg:shadow-md">
+            <div class="p-4 sm:p-6 lg:p-8">
+                <div class="flex">
+                    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 px-4">
+                        <p class="text-sm font-medium leading-normal text-primary">Deep Dive</p>
+                    </div>
+                </div>
+                <h1 class="mt-4 text-3xl font-bold leading-tight tracking-tight text-text-light dark:text-text-dark sm:text-4xl lg:text-5xl">The Quest for the Perfect Neapolitan: A Deep Dive</h1>
+                <div class="mt-6 flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="h-10 w-10 shrink-0 rounded-full bg-cover bg-center bg-no-repeat" data-alt="Profile picture of Jane Dough" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4x2pKBkJ2BzEFKPm-ExhPG1kWu5h4wI0rN0OS9ftGrRQITi_VNr55qQkZDHVrYjrwd_1CtDrrDYKwQyBTodqRMlKxxXOvyR4dyArCR8J49UWdhvWDRTStcvbrGkE_VNBfGKIwco44OhjebrI00GxM1Z0964Wuh0i3NH5aYwwquF0Fn-yEodl3XkPVdZNHBsnZOP40_P9bSJRg_DaJ17fb9t3kGNKYLytTUUGZ_rNz73TjCJnxSMf2zoWE4E4QySkyHqN05pZjNkQo");'></div>
+                        <p class="flex-1 truncate text-base font-medium leading-normal text-text-light dark:text-text-dark">Jane Dough</p>
+                    </div>
+                    <div class="shrink-0">
+                        <p class="text-sm font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">Oct 26, 2023</p>
+                    </div>
                 </div>
             </div>
-            <!-- HeadlineText -->
-            <h1 class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight text-left pb-4">
-                The Quest for the Perfect Neapolitan: A Deep Dive</h1>
-            <!-- ListItem/Byline -->
-            <div class="flex items-center gap-4 min-h-14 justify-between">
-                <div class="flex items-center gap-4">
-                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-10"
-                         data-alt="Profile picture of Jane Dough"
-                         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4x2pKBkJ2BzEFKPm-ExhPG1kWu5h4wI0rN0OS9ftGrRQITi_VNr55qQkZDHVrYjrwd_1CtDrrDYKwQyBTodqRMlKxxXOvyR4dyArCR8J49UWdhvWDRTStcvbrGkE_VNBfGKIwco44OhjebrI00GxM1Z0964Wuh0i3NH5aYwwquF0Fn-yEodl3XkPVdZNHBsnZOP40_P9bSJRg_DaJ17fb9t3kGNKYLytTUUGZ_rNz73TjCJnxSMf2zoWE4E4QySkyHqN05pZjNkQo");'></div>
-                    <p class="text-base font-normal leading-normal flex-1 truncate">Jane Dough</p>
-                </div>
-                <div class="shrink-0"><p
-                        class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Oct
-                    26, 2023</p></div>
-            </div>
-        </div>
-        <!-- Hero Image -->
-        <div class="w-full aspect-[4/3] bg-cover bg-center"
-             data-alt="A delicious looking Neapolitan pizza with basil leaves on a dark surface."
-             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiJ8HbaRxNPWKRTmYuQ7-c6pBolBFY0FrKVS4Nlh6v7fVtttofNWUkfB-FMPKP4HGSvxlSeL3M0ubc9fz4IBe1VU82jTxx6XgjJbJex-TQ3NMHIxyEIMGMNHSsY7nT8lxKcgEssNUS28Y4ltjgDHN6KpQNjyexVJ7MP8qakeNXt-kwDi-ZKbByomep8Yg3hXNcFj9C0lwWum-VT8hLddSgwJY3lluOZ72KhGV7R0jt0TyU3nH0ECc2DatnJLBSZGACEyTB74QIfD4_')"></div>
-        <!-- Article Body -->
-        <article class="px-4 py-6 space-y-6 bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark">
-            <p class="text-base leading-relaxed">
-                The Neapolitan pizza, a culinary masterpiece from Naples, Italy, is more than just food; it's a
-                UNESCO-recognized cultural heritage. Its simplicity is deceptive, requiring precise technique and the
-                highest quality ingredients. The quest for the perfect Neapolitan is a journey many chefs and home cooks
-                embark on, a delicious obsession with dough, sauce, and cheese.
-            </p>
-            <p class="text-base leading-relaxed">
-                It all starts with the dough. The authentic recipe calls for just four ingredients: type "00" flour,
-                water, salt, and yeast. The magic lies in the fermentation process—a long, slow rise that develops
-                complex flavors and the signature airy, chewy crust known as the "cornicione."
-            </p>
-            <!-- Embedded Media: Image -->
-            <figure class="space-y-2">
-                <div class="w-full aspect-video rounded-lg bg-cover bg-center"
-                     data-alt="Close up of pizza dough being kneaded on a floured surface."
-                     style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-Rv35X1SJoHvh0ZNcy84rNL7-K8eAvu5NMGAI_BBvvLRr_g0mh3MD939LSSf1D_kW_GpPHT-Bre1kP02Z1-Au4PW56QkSM61Gwn741NBJZc-tFJ6IlK4RJV5NJvdHGDWj-HBFiFvpcMSsgBg_5D9t1ZUQi4tyv119o1RSLCn4BXNAZrboN3IoMrpjFxKoQAXRbQ_n9ieEdqTE4rlMhEgXwfBKrDx5IykkpGIAGJRutqh3Kg5sCWPcvlZK90lNoPIMJ5JsvGE0UQdq');"></div>
-                <figcaption class="text-sm text-text-muted-light dark:text-text-muted-dark text-center">The foundation
-                    of any great pizza is perfectly fermented dough.
-                </figcaption>
-            </figure>
-            <h3 class="text-xl font-bold pt-4">The Holy Trinity of Toppings</h3>
-            <p class="text-base leading-relaxed">
-                While variations exist, the classic Pizza Margherita showcases the "holy trinity": San Marzano tomatoes,
-                fresh mozzarella di bufala, and fresh basil. The tomatoes, grown in the volcanic soil near Mount
-                Vesuvius, provide a sweet, low-acidity base. The mozzarella, made from the milk of Italian water
-                buffalo, is creamy and delicate, melting into luscious pools without releasing excess water.
-            </p>
-            <blockquote class="border-l-4 border-primary pl-4 italic text-text-muted-light dark:text-text-muted-dark">
-                "Simplicity is the ultimate sophistication. In a world of endless toppings, the Margherita reminds us
-                that sometimes, less is truly more."
-            </blockquote>
-            <p class="text-base leading-relaxed">
-                Finally, the bake. A traditional Neapolitan pizza is cooked in a wood-fired oven at a scorching
-                800-900°F (430-480°C) for no more than 90 seconds. This intense heat flash-cooks the pizza, creating a
-                soft, tender center and a beautifully charred, leopard-spotted crust. Replicating this at home is the
-                ultimate challenge, but with a good pizza stone or steel, it's possible to get incredibly close.
-            </p>
-        </article>
-        <!-- ActionsBar/Sharing -->
-        <div class="px-4 py-6 bg-surface-light dark:bg-surface-dark">
-            <h3 class="text-lg font-bold mb-4">Share This Story</h3>
-            <div class="@container">
-                <div class="gap-2 flex flex-wrap justify-start">
-                    <div class="flex flex-col items-center gap-2 py-2.5 text-center w-20">
-                        <button aria-label="Share on Facebook"
-                                class="rounded-full bg-surface-subtle-light dark:bg-surface-subtle-dark p-3">
+            <div class="aspect-video w-full bg-cover bg-center lg:rounded-t-xl" data-alt="A delicious looking Neapolitan pizza with basil leaves on a dark surface." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiJ8HbaRxNPWKRTmYuQ7-c6pBolBFY0FrKVS4Nlh6v7fVtttofNWUkfB-FMPKP4HGSvxlSeL3M0ubc9fz4IBe1VU82jTxx6XgjJbJex-TQ3NMHIxyEIMGMNHSsY7nT8lxKcgEssNUS28Y4ltjgDHN6KpQNjyexVJ7MP8qakeNXt-kwDi-ZKbByomep8Yg3hXNcFj9C0lwWum-VT8hLddSgwJY3lluOZ72KhGV7R0jt0TyU3nH0ECc2DatnJLBSZGACEyTB74QIfD4_')"></div>
+            <article class="prose prose-lg max-w-none p-4 text-text-light dark:text-text-dark sm:p-6 lg:p-8">
+                <p class="leading-relaxed text-text-light dark:text-text-dark">The Neapolitan pizza, a culinary masterpiece from Naples, Italy, is more than just food; it's a UNESCO-recognized cultural heritage. Its simplicity is deceptive, requiring precise technique and the highest quality ingredients. The quest for the perfect Neapolitan is a journey many chefs and home cooks embark on, a delicious obsession with dough, sauce, and cheese.</p>
+                <p class="leading-relaxed text-text-light dark:text-text-dark">It all starts with the dough. The authentic recipe calls for just four ingredients: type "00" flour, water, salt, and yeast. The magic lies in the fermentation process—a long, slow rise that develops complex flavors and the signature airy, chewy crust known as the "cornicione."</p>
+                <figure class="space-y-2 py-4">
+                    <div class="aspect-video w-full rounded-lg bg-cover bg-center" data-alt="Close up of pizza dough being kneaded on a floured surface." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-Rv35X1SJoHvh0ZNcy84rNL7-K8eAvu5NMGAI_BBvvLRr_g0mh3MD939LSSf1D_kW_GpPHT-Bre1kP02Z1-Au4PW56QkSM61Gwn741NBJZc-tFJ6IlK4RJV5NJvdHGDWj-HBFiFvpcMSsgBg_5D9t1ZUQi4tyv119o1RSLCn4BXNAZrboN3IoMrpjFxKoQAXRbQ_n9ieEdqTE4rlMhEgXwfBKrDx5IykkpGIAGJRutqh3Kg5sCWPcvlZK90lNoPIMJ5JsvGE0UQdq');"></div>
+                    <figcaption class="text-center text-sm text-text-muted-light dark:text-text-muted-dark">The foundation of any great pizza is perfectly fermented dough.</figcaption>
+                </figure>
+                <h3 class="font-bold text-text-light dark:text-text-dark pt-4 text-2xl md:text-3xl">The Holy Trinity of Toppings</h3>
+                <p class="leading-relaxed text-text-light dark:text-text-dark">While variations exist, the classic Pizza Margherita showcases the "holy trinity": San Marzano tomatoes, fresh mozzarella di bufala, and fresh basil. The tomatoes, grown in the volcanic soil near Mount Vesuvius, provide a sweet, low-acidity base. The mozzarella, made from the milk of Italian water buffalo, is creamy and delicate, melting into luscious pools without releasing excess water.</p>
+                <blockquote class="my-6 border-l-4 border-primary pl-4 text-xl italic text-text-muted-light dark:text-text-muted-dark">"Simplicity is the ultimate sophistication. In a world of endless toppings, the Margherita reminds us that sometimes, less is truly more."</blockquote>
+                <p class="leading-relaxed text-text-light dark:text-text-dark">Finally, the bake. A traditional Neapolitan pizza is cooked in a wood-fired oven at a scorching 800-900°F (430-480°C) for no more than 90 seconds. This intense heat flash-cooks the pizza, creating a soft, tender center and a beautifully charred, leopard-spotted crust. Replicating this at home is the ultimate challenge, but with a good pizza stone or steel, it's possible to get incredibly close.</p>
+            </article>
+            <div class="border-t border-surface-subtle-light p-4 dark:border-surface-subtle-dark sm:p-6 lg:p-8">
+                <h3 class="text-lg font-bold">Share This Story</h3>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <div class="flex w-20 flex-col items-center gap-2 py-2.5 text-center">
+                        <button aria-label="Share on Facebook" class="rounded-full bg-surface-subtle-light p-3 hover:bg-primary/20 dark:bg-surface-subtle-dark dark:hover:bg-primary/20">
                             <span class="material-symbols-outlined text-text-light dark:text-text-dark">share</span>
                         </button>
                         <p class="text-sm font-medium leading-normal">Share</p>
                     </div>
-                    <div class="flex flex-col items-center gap-2 py-2.5 text-center w-20">
-                        <button aria-label="Tweet this article"
-                                class="rounded-full bg-surface-subtle-light dark:bg-surface-subtle-dark p-3">
+                    <div class="flex w-20 flex-col items-center gap-2 py-2.5 text-center">
+                        <button aria-label="Tweet this article" class="rounded-full bg-surface-subtle-light p-3 hover:bg-primary/20 dark:bg-surface-subtle-dark dark:hover:bg-primary/20">
                             <span class="material-symbols-outlined text-text-light dark:text-text-dark">sms</span>
                         </button>
                         <p class="text-sm font-medium leading-normal">Tweet</p>
                     </div>
-                    <div class="flex flex-col items-center gap-2 py-2.5 text-center w-20">
-                        <button aria-label="Copy link"
-                                class="rounded-full bg-surface-subtle-light dark:bg-surface-subtle-dark p-3">
+                    <div class="flex w-20 flex-col items-center gap-2 py-2.5 text-center">
+                        <button aria-label="Copy link" class="rounded-full bg-surface-subtle-light p-3 hover:bg-primary/20 dark:bg-surface-subtle-dark dark:hover:bg-primary/20">
                             <span class="material-symbols-outlined text-text-light dark:text-text-dark">link</span>
                         </button>
                         <p class="text-sm font-medium leading-normal">Copy</p>
@@ -162,28 +124,21 @@
                 </div>
             </div>
         </div>
-        <!-- Related Articles -->
-        <div class="bg-background-light dark:bg-background-dark px-4 py-8">
-            <h3 class="text-xl font-bold mb-4">You Might Also Like</h3>
-            <div class="grid grid-cols-1 gap-6">
-                <a class="group flex items-center gap-4 bg-surface-light dark:bg-surface-dark p-3 rounded-lg" href="#">
-                    <div class="h-20 w-20 flex-shrink-0 rounded-md bg-cover bg-center"
-                         data-alt="Chicago-style deep dish pizza slice being lifted."
-                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCU72Xteg1VPPnCCnzaMG0NtWA38CCeSYNffye9N3oFSlLt413prObV6u11KvIDE9HdEFimoJjynDQMgTLEaXk-JTDIZJ3bF497bsEj5jlBpVTulSSM4dJNqjWyh9qw4r_Xf4W8xvWDPZ35hl3nL0HsXnRKzIlvPUB4Yxx8MIcfruBaEH9c6e6f15dMHyZCtgjV0yIa5FtjnaZneQv4I7pY9feN5XXt5dQ6nHCb5dH44CF9IhG4Ourlw8PZud-69Q5ITpjMgPd7o6wz')"></div>
+        <div class="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+            <h3 class="text-xl font-bold">You Might Also Like</h3>
+            <div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+                <a class="group flex items-center gap-4 rounded-lg bg-surface-light p-3 shadow-sm transition-shadow hover:shadow-md dark:bg-surface-dark" href="#">
+                    <div class="h-20 w-20 shrink-0 rounded-md bg-cover bg-center" data-alt="Chicago-style deep dish pizza slice being lifted." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCU72Xteg1VPPnCCnzaMG0NtWA38CCeSYNffye9N3oFSlLt413prObV6u11KvIDE9HdEFimoJjynDQMgTLEaXk-JTDIZJ3bF497bsEj5jlBpVTulSSM4dJNqjWyh9qw4r_Xf4W8xvWDPZ35hl3nL0HsXnRKzIlvPUB4Yxx8MIcfruBaEH9c6e6f15dMHyZCtgjV0yIa5FtjnaZneQv4I7pY9feN5XXt5dQ6nHCb5dH44CF9IhG4Ourlw8PZud-69Q5ITpjMgPd7o6wz')"></div>
                     <div class="flex flex-col">
                         <p class="text-sm font-medium text-primary">History</p>
-                        <p class="font-bold leading-tight group-hover:underline">From Rome to Chicago: A History of
-                            Pizza Styles</p>
+                        <p class="font-bold leading-tight group-hover:underline">From Rome to Chicago: A History of Pizza Styles</p>
                     </div>
                 </a>
-                <a class="group flex items-center gap-4 bg-surface-light dark:bg-surface-dark p-3 rounded-lg" href="#">
-                    <div class="h-20 w-20 flex-shrink-0 rounded-md bg-cover bg-center"
-                         data-alt="Top down view of a vegetarian pizza with many colorful toppings."
-                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4zmdPIluAFd5cinn8FrbEgMwxQk5ctcnE_pvm7dsm3GEEO2kkI1PWe_poBurL8GzlLEOpOvBmbRAawJMdybcCY53KHFoAqLD9N0TCI1IuO_IIItfVlLniA5yDCzKRNPSpEAEzjCaVoTIUwJOzCljYh-VsQ3UsEVtxu5fIaVH5lbZ1Iafr9HLxqYxgNPXAnKrvbETD_LV4IdU6Ed_gZ0u2z8RcB-T6fGoU8riSpbkXztkhnf5EUX1u_DOxsiifZGyLxU3cY7vSmfw4')"></div>
+                <a class="group flex items-center gap-4 rounded-lg bg-surface-light p-3 shadow-sm transition-shadow hover:shadow-md dark:bg-surface-dark" href="#">
+                    <div class="h-20 w-20 shrink-0 rounded-md bg-cover bg-center" data-alt="Top down view of a vegetarian pizza with many colorful toppings." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4zmdPIluAFd5cinn8FrbEgMwxQk5ctcnE_pvm7dsm3GEEO2kkI1PWe_poBurL8GzlLEOpOvBmbRAawJMdybcCY53KHFoAqLD9N0TCI1IuO_IIItfVlLniA5yDCzKRNPSpEAEzjCaVoTIUwJOzCljYh-VsQ3UsEVtxu5fIaVH5lbZ1Iafr9HLxqYxgNPXAnKrvbETD_LV4IdU6Ed_gZ0u2z8RcB-T6fGoU8riSpbkXztkhnf5EUX1u_DOxsiifZGyLxU3cY7vSmfw4')"></div>
                     <div class="flex flex-col">
                         <p class="text-sm font-medium text-primary">How-To</p>
-                        <p class="font-bold leading-tight group-hover:underline">Mastering the Art of Toppings: A Guide
-                            to Balance</p>
+                        <p class="font-bold leading-tight group-hover:underline">Mastering the Art of Toppings: A Guide to Balance</p>
                     </div>
                 </a>
             </div>
@@ -194,5 +149,5 @@
         <a class="text-sm text-text-muted-light dark:text-text-muted-dark" href="mailto:pizza.in.riga@gmail.com">pizza.in.riga@gmail.com</a>
     </footer>
 </div>
-</body>
-</html>
+
+</body></html>
