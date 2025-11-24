@@ -1,7 +1,174 @@
-<html>
-  <head>
-    <script data-goatcounter="https://rigapizza.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-  </head>
-  <body>Pizza in Riga</body>
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <meta name="description" content="Pizza in Riga">
+    <meta name="keywords" content="pizza, riga">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    <title>Pizza in Riga</title>
+    <script data-goatcounter="https://rigapizza.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#ec5b13",
+                "background-light": "#f8f6f6",
+                "background-dark": "#221610",
+              },
+              fontFamily: {
+                "display": ["Epilogue", "sans-serif"]
+              },
+              borderRadius: {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+              },
+            },
+          },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+    <header class="sticky top-0 z-10 flex items-center justify-between border-b border-black/10 bg-background-light/80 p-4 backdrop-blur-sm dark:border-white/10 md:px-6">
+        <button class="flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-full text-black dark:text-white">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+        <h1 class="text-lg font-bold leading-tight tracking-[-0.015em] text-black dark:text-white md:text-xl">Pizza in
+            Riga</h1>
+        <button class="flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-full text-black dark:text-white">
+            <span class="material-symbols-outlined text-2xl">search</span>
+        </button>
+    </header>
+    <main class="w-full max-w-4xl mx-auto p-4 md:p-6 lg:p-8">
+        <div class="flex flex-col gap-4 md:gap-6">
+            <article
+                    class="flex flex-col md:flex-row items-stretch justify-between gap-4 md:gap-6 rounded-xl p-4 bg-white dark:bg-black/20">
+                <div class="md:w-48 lg:w-56 flex-shrink-0 h-40 md:h-auto rounded-lg bg-cover bg-center bg-no-repeat"
+                     data-alt="Close-up shot of a Neapolitan pizza with a perfectly blistered crust, fresh basil, and mozzarella."
+                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA0RYeefJgE5UMCB098j4nUUQu75nHHaH9q-WGaTKksI0NytfRQXzm_XvBGtzcbdvF4V-DSaTLSBg8cRFHtiRkIUrZ8j8SlBmg-7Cvl_cjUEK-ifRZRdJjqFbe2U6FRbdG-wIpSdaHP3I3nLy3ChQTfEUMaEH_dAz_L4tj0GB_l8YH7G8q2o_Jo7N8_dWotL-bdc1uLDB8Ki-bzSIAQCxA4bF2A6wml2B0m_V_iIxDXrd77jWHjbUkA5lHopOJy6Wl5Eafh6DRtsvgY");'></div>
+                <div class="flex flex-1 flex-col justify-between gap-4">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-xs font-medium uppercase tracking-wider text-primary dark:text-primary/90">
+                          CITY GUIDE · 5 MIN READ</p>
+                        <h2 class="text-base font-bold leading-tight text-black dark:text-white md:text-lg">Pizzeria district</h2>
+                        <p class="text-sm font-normal leading-normal text-black/60 dark:text-white/60 mt-1">
+                            Discover the time-honored techniques that create the iconic chewy, blistered crust of a true
+                            Neapolitan pizza.
+                        </p>
+                    </div>
+                    <a class="flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full h-8 px-4 text-sm font-medium leading-normal bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/90 hover:bg-primary/20 dark:hover:bg-primary/30"
+                       href="article.html">
+                        <span>Read More</span>
+                        <span class="material-symbols-outlined text-base">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+            <article
+                    class="flex flex-col md:flex-row items-stretch justify-between gap-4 md:gap-6 rounded-xl p-4 bg-white dark:bg-black/20">
+                <div class="md:w-48 lg:w-56 flex-shrink-0 h-40 md:h-auto rounded-lg bg-cover bg-center bg-no-repeat"
+                     data-alt="A thick slice of Chicago deep-dish pizza being lifted from the pan, with a long cheese pull."
+                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2K8d8qndONZFgbk0alRm-t8jGwFs8d7d9-N8C3_h8T2f0iKvFnZWyornhTLT7jwsddiP-Jb3hIlsxHVcXM3aLyCtUGegY10mEEKsS9jwZTLUz5Re_qAodEPiuzDy5p7UFokqIDp8N2glR3boojmUCFU-Z4A9V82TmN84va8cwEYR7RH_dIZXWTe5YTJ239cVULh9XfJatc_r95n1qBxZhPv9hq4_Yq9qlI42ntAB880UC1syHNPsA3TIH9Ma_v1di4SUNt5J-9VMO");'></div>
+                <div class="flex flex-1 flex-col justify-between gap-4">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-xs font-medium uppercase tracking-wider text-primary dark:text-primary/90">CITY
+                            GUIDE · 8 MIN READ</p>
+                        <h2 class="text-base font-bold leading-tight text-black dark:text-white md:text-lg">Pizzas for
+                            big company</h2>
+                        <p class="text-sm font-normal leading-normal text-black/60 dark:text-white/60 mt-1">
+                            Join us as we explore the legendary pizzerias of Chicago to find the ultimate deep-dish
+                            slice, from classic institutions to modern marvels.
+                        </p>
+                    </div>
+                    <a class="flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full h-8 px-4 text-sm font-medium leading-normal bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/90 hover:bg-primary/20 dark:hover:bg-primary/30"
+                       href="#">
+                        <span>Read More</span>
+                        <span class="material-symbols-outlined text-base">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+            <article
+                    class="flex flex-col md:flex-row items-stretch justify-between gap-4 md:gap-6 rounded-xl p-4 bg-white dark:bg-black/20">
+                <div class="md:w-48 lg:w-56 flex-shrink-0 h-40 md:h-auto rounded-lg bg-cover bg-center bg-no-repeat"
+                     data-alt="A glass of red wine next to a freshly baked pizza on a rustic wooden table."
+                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOY096p-xrDrhN5EfOHideBEF1aNla6afVH7zSnKLlQRoJgraG_jXi61VZXbQ3MLBX6KKtomVBjekmdNmV83PDp305L3SywWkLCc6FibwLDBLO12o5roXpTYZs5VLjVc8Z9cRk0IBDNfJXmoEtQHYo1n93RymqzFQLTfzRXDdqRmZ94HGEI0u51Y8_j1z64xsR045Y_kSFj5XWHHHTpArhuoo2KdQNSosiBIPG8vL4aoano7ZghKdzhw5G86t31ucX8amQD24TKqjl");'></div>
+                <div class="flex flex-1 flex-col justify-between gap-4">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-xs font-medium uppercase tracking-wider text-primary dark:text-primary/90">GUIDE
+                            · 4 MIN READ</p>
+                        <h2 class="text-base font-bold leading-tight text-black dark:text-white md:text-lg">Street
+                            Pizza</h2>
+                        <p class="text-sm font-normal leading-normal text-black/60 dark:text-white/60 mt-1">
+                            Elevate your pizza night with expert advice on selecting the perfect wine to complement any
+                            topping, from classic margherita to spicy pepperoni.
+                        </p>
+                    </div>
+                    <a class="flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full h-8 px-4 text-sm font-medium leading-normal bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/90 hover:bg-primary/20 dark:hover:bg-primary/30"
+                       href="#">
+                        <span>Read More</span>
+                        <span class="material-symbols-outlined text-base">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+            <article
+                    class="flex flex-col md:flex-row items-stretch justify-between gap-4 md:gap-6 rounded-xl p-4 bg-white dark:bg-black/20">
+                <div class="md:w-48 lg:w-56 flex-shrink-0 h-40 md:h-auto rounded-lg bg-cover bg-center bg-no-repeat"
+                     data-alt="An old black and white photo of an early pizzeria in Naples, Italy."
+                     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYspNcL4POx9hYSvZ2A4DqM89MztStRmE7GWZP_uBX6xvsKrW55eutwM2U-djtb9v8PDfZVjPY2QBwAHTRdK0K0jA38JvPKju-Ea7EWShs6VwkQ_8Fb3Nx3JMN3m6vAKCZbEmhbC8kOxspMUgpCjqwPWpnCUDeu8E9R7_YbYN6-KURGNQNi7UGCXyRYovn_5HH899gBprv2HK_uvkxR5Ah-sy96DpHoORxlDUssJGa71DvpBTXmb7sjuElPUPFcT9gIP5aca7qdlA5");'></div>
+                <div class="flex flex-1 flex-col justify-between gap-4">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-xs font-medium uppercase tracking-wider text-primary dark:text-primary/90">
+                            HISTORY · 7 MIN READ</p>
+                        <h2 class="text-base font-bold leading-tight text-black dark:text-white md:text-lg">From
+                            Margherita to Modern: The Evolution of Pizza</h2>
+                        <p class="text-sm font-normal leading-normal text-black/60 dark:text-white/60 mt-1">
+                            A delicious journey through time, tracing the humble origins of pizza in Naples to its
+                            status as a global culinary icon.
+                        </p>
+                    </div>
+                    <a class="flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full h-8 px-4 text-sm font-medium leading-normal bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/90 hover:bg-primary/20 dark:hover:bg-primary/30"
+                       href="#">
+                        <span>Read More</span>
+                        <span class="material-symbols-outlined text-base">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-subtle-light dark:bg-surface-subtle-dark text-center py-6 px-4">
+        <a class="text-sm text-text-muted-light dark:text-text-muted-dark" href="mailto:pizza.in.riga@gmail.com">pizza.in.riga@gmail.com</a>
+    </footer>
+</div>
+
+</body>
 </html>
